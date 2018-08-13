@@ -3,6 +3,17 @@ body{
 	font-weight: 700;
 	font-size: 14px;
 }
+button{
+	height: 50px;
+	width: 160px;
+}
+h2{
+	font-family: 'Anton', sans-serif;
+	font-size: 42px;	
+}
+form{
+	margin-left: 20%
+}
 #mainNav{
 	justify-content: end;
 }
@@ -19,11 +30,12 @@ body{
 }
 .heroshot{
 	width: 100%;
-	height: 742px;
+	height: 70vh;
 	background-color: black;
-	display: flex;
+	display: flex; 
+	flex-direction: column;
 	justify-content: center;
-align-items: center;
+	align-items: center;
 
 }
 .herotext{
@@ -31,6 +43,40 @@ align-items: center;
 	color: white;
 	font-size: 70px;
 	
+}
+#facts{background-color: #027681;
+color:white}
 
-
+.block{
+margin-left: 10%;
+}
+header {
+	position: relative;
+	height: 380px;
+	background-color: #027681;
+  }
+  
+  h1 {
+	padding: 100px 0;
+	font: 44px "Arial";
+	text-align: center;
+  }
+  
+  header h1 {
+	color: white;
+  }
+  
+  svg {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 10vw;
+	/* set height to pixels if you want angle to change with screen width */
+  }
+.box-text{
+color: white;
+text-align: center;
+margin-top: 50px;	
+padding: 80px;
+font-size: 24px;
 }

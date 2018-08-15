@@ -1,7 +1,74 @@
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+@media only screen and (min-width: 480px) {
+    /* For mobile: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+
+
+
 body{
 	font-family: 'Nunito', sans-serif;
-	font-weight: 700;
-	font-size: 14px;
+	font-weight: 400;
+	font-size: 16px;
+  line-height: 1.25;
+}
+button{
+	height: 50px;
+	width: 160px;
+}
+h2{
+	font-family: 'Anton', sans-serif;
+	font-size: 42px;	
+}
+
+form{
+	margin-left: 20%
 }
 #mainNav{
 	justify-content: end;
@@ -19,18 +86,143 @@ body{
 }
 .heroshot{
 	width: 100%;
-	height: 742px;
+	height: 80vh;
 	background-color: black;
-	display: flex;
+	display: flex; 
+	flex-direction: column;
 	justify-content: center;
-align-items: center;
+	align-items: center;
 
 }
 .herotext{
 	font-family: 'Anton', sans-serif;
 	color: white;
-	font-size: 70px;
-	
+	font-size: 5em;
+  padding: 10px;	
+}
+@media only screen and (max-width: 480px){
+  .herotext {font-size: 2em;}
+}
 
+#facts{background-color: #027681;
+color:white}
+
+.block{
+margin-left: 10%;
+margin-top:2%;
+}
+header {
+	position: relative;
+	height: 380px;
+	background-color: #027681;
+  }
+  
+  h1 {
+	padding: 100px 0;
+	font: 42px "Anton";
+	text-align: center;
+  }
+  td {
+  	height: 100px;
+  	vertical-align: center;
+  }
+  
+  header h1 {
+	color: white;
+  }
+  
+  svg {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 10vw;
+	/* set height to pixels if you want angle to change with screen width */
+  }
+#subherotext{
+  font-size: 20px;
+}
+.box-text{
+color: white;
+text-align: center;
+/*margin-top: 50px;*/
+padding: 100px 80px;
+font-size: 24px;
+background-color:#027681;
+}
+.box-text2{
+color: white;
+text-align: center;
+/*margin-top: 50px;*/
+padding: 80px;
+font-size: 24px;
+background-color:#027681;
+}
+.img-placeholder {
+	background-color: #D8D8D8;
+	height: 300px;
+	border-color: #D8D8D8;
+  margin-bottom: 60px;
+}
+#vaccine-text {
+	background-color: #4A4A4A;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+  margin-top: 0px;
+	margin-bottom:0px;
+} 
+#hpvfacts{
+  padding-top: 68;
+}
+.embed-responsive-item {
+	margin-left: 10%;
+}
+
+#vaccination{
+  margin-left: 12%;
+  margin-right: 12%;
+}
+.center{
+  margin-left: 7%;
+margin-right: 7%;
 
 }
+.card-deck {
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 1.25rem;
+  text-align: center;
+padding-bottom: 100px;
+}
+.card{
+  border: none;
+  border-radius: 0;
+}
+.standtext{
+  margin-top: 60px;
+}
+#inlineFormInputName3{
+  width: 300px;
+
+}
+#subbtn{
+  margin-left: 200px;
+  border-radius: 0;
+  background-color: #027681;
+  border-style: none;
+}
+.form-inline{
+  margin-left: 100px;
+}
+#getinvolved{
+  margin-left: 100px;
+}
+footer {
+    margin-top: 60px;
+    background-color: #777;
+    width: 100%;
+    height: 115px;
+    padding: 10px;
+    text-align: right;
+    color: white;
+  }

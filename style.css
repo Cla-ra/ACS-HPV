@@ -62,13 +62,59 @@ button{
 	height: 50px;
 	width: 160px;
 }
+#patbtn:hover{
+  background-color: #b27a01;
+    border-color: #b27a01;
+}
+#factbtn:hover{
+  background-color: #b27a01;
+    border-color: #b27a01;
+}
+#herobutton:hover{
+  background-color: #b27a01;
+    border-color: #b27a01;
+}
+#fact-download{
+  width:175px;
+}
+a{
+  color:white;
+}
+a:hover{
+  color:white;
+  text-decoration: none;
+   
+}
+.close{
+    margin-right: 0px;
+    margin-left: 0px;
+    justify-content: end;
+    width: 56px;
+    height: 56px;
+    padding-right: 0px;
+}
+
 h2{
 	font-family: 'Anton', sans-serif;
 	font-size: 42px;	
 }
+@media only screen and (max-width: 480px){
+  h2{
+    font-size: 2em;
+
+  }
+}
 
 form{
 	margin-left: 20%
+}
+.btn-secondary {
+      background-color: #d49001;
+    border-color: #d49001;
+}
+.btn-secondary:hover{
+  background-color: #b27a01;
+  border-color:#b27a01; 
 }
 #mainNav{
 	justify-content: end;
@@ -77,7 +123,7 @@ form{
 	display: flex;
 }
 .mainNav3{
-	padding-right: 26px; 
+	padding-right: 10px; 
 }
 
 .mainNav2{
@@ -87,21 +133,38 @@ form{
 .heroshot{
 	width: 100%;
 	height: 80vh;
-	background-color: black;
+	background-image:url(images/ACS-Hero-India.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
 	display: flex; 
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 
 }
+#facts-hero{
+  width: 100%;
+  height: 748px;
+  background-image:url(images/ACS-Hero-LearnTheFacts.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .herotext{
 	font-family: 'Anton', sans-serif;
 	color: white;
 	font-size: 5em;
   padding: 10px;	
+  width: 700px;
 }
 @media only screen and (max-width: 480px){
-  .herotext {font-size: 2em;}
+  .herotext {font-size: 2em;
+    width: 250px;}
 }
 
 #facts{background-color: #027681;
@@ -110,6 +173,10 @@ color:white}
 .block{
 margin-left: 10%;
 margin-top:2%;
+}
+@media only screen and (max-width: 480px){
+  .block{ width: 275px;
+  text-align: center; }
 }
 header {
 	position: relative;
@@ -140,14 +207,47 @@ header {
   }
 #subherotext{
   font-size: 20px;
+  width: 550px;
+}
+@media only screen and (max-width: 480px){
+  #subherotext {font-size: 16px;
+                width: 275px;}
+}
+#subherotext-fact{
+  font-size: 24px;
+  width: 631px;
+}
+@media only screen and (max-width: 480px){
+  #subherotext-fact {font-size: 16px;
+                width: 275px;}
+}
+#shape{
+  background-color: #442a5b;
 }
 .box-text{
 color: white;
 text-align: center;
 /*margin-top: 50px;*/
+width: 800px;
 padding: 100px 80px;
 font-size: 24px;
 background-color:#027681;
+margin-left: 300px;
+}
+@media only screen and (max-width: 480px){
+  .box-text{padding: 125px 40px 0px 40px;
+    width: 330px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: 0px;
+  }
+}
+#shadow{
+  background-color: black;
+  width: 40%;
+  height: 300px;
+  position: absolute;
+
 }
 .box-text2{
 color: white;
@@ -155,7 +255,18 @@ text-align: center;
 /*margin-top: 50px;*/
 padding: 80px;
 font-size: 24px;
-background-color:#027681;
+background-color:#442a5b;
+width: 600px;
+margin-left: 400px;
+}
+
+@media only screen and (max-width: 480px) {
+  .box-text2{
+    font-size: 18px;
+    margin-left: 0px;
+    width: 345px;
+    padding-top: 125px;
+  }
 }
 .img-placeholder {
 	background-color: #D8D8D8;
@@ -164,23 +275,86 @@ background-color:#027681;
   margin-bottom: 60px;
 }
 #vaccine-text {
-	background-color: #4A4A4A;
-	color: white;
+  color: white;
 	text-align: center;
 	font-size: 24px;
   margin-top: 0px;
 	margin-bottom:0px;
 } 
+
+#vacinfo{
+ margin-top: 160px;
+  width: 600px;
+  margin-left: 275px;
+  z-index: -1;
+ 
+}
+.jumbotron{
+  background-image:url(images/hero2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 744px;
+  height: 744px;
+}
+@media only screen and (max-width: 480px){
+  .jumbotron{
+    background-size: auto;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  #toolsInfo{
+    padding-top: 325px;
+
+  }
+}
+
+@media only screen and (max-width: 480px){
+  #vacinfo { font-size: 18px;
+  margin-left: 20px;
+  margin-top: 25px;
+  width:300px; }
+}
+@media only screen and (max-width: 480px){
+  #vaccine-text {margin-top: 60px}
+}
 #hpvfacts{
   padding-top: 68;
+  padding-left: 70px;
+}
+@media only screen and (max-width: 480px){
+  #hpvfacts {font-size: 2em;
+    text-align: center;
+      margin-top: 60px;
+    /* padding-left: 0px; */
+    width: 320px;
+    /* margin-right: 0px; */
+    /* justify-content: center; */
+    padding-left: 20px;}
+}
+
+#hpvfactssub{
+  padding-left: 70px;
+}
+@media only screen and (max-width: 480px){
+  #hpvfactssub {display: none;}
 }
 .embed-responsive-item {
 	margin-left: 10%;
+}
+@media only screen and (max-width: 480px){
+  .embed-responsive-item{
+    margin-left: 0px;
+  }
 }
 
 #vaccination{
   margin-left: 12%;
   margin-right: 12%;
+}
+@media only screen and (max-width: 480px){
+  #circle {margin-top: 30px;
+    right:32px;}
 }
 .center{
   margin-left: 7%;
@@ -194,6 +368,11 @@ margin-right: 7%;
   text-align: center;
 padding-bottom: 100px;
 }
+@media only screen and (max-width: 480px){
+  .card-deck{
+    padding-bottom: 60px;
+  }
+}
 .card{
   border: none;
   border-radius: 0;
@@ -201,21 +380,48 @@ padding-bottom: 100px;
 .standtext{
   margin-top: 60px;
 }
+@media only screen and (max-width: 480px){
+  .standtext{
+    font-size: 2em;
+  }
+}
 #inlineFormInputName3{
   width: 300px;
 
 }
+#inlineFormInputName5{
+  width: 300px;
+
+}
+
+@media only screen and (max-width: 480px){
+  .form-inline{
+    margin-left: 75px !important;
+    width: 250px;
+  }
+}
 #subbtn{
   margin-left: 200px;
   border-radius: 0;
-  background-color: #027681;
+  background-color: #d49001;
   border-style: none;
+}
+#subbtn:hover{
+  background-color: #b27a01;
+  border-color: #b27a01; 
 }
 .form-inline{
   margin-left: 100px;
 }
-#getinvolved{
+#request-info{
   margin-left: 100px;
+}
+@media only screen and (max-width: 480px){
+  #request-info{
+    margin-top: 60px;
+    margin-left: 0px;
+    text-align: center;
+  }
 }
 footer {
     margin-top: 60px;
@@ -225,4 +431,916 @@ footer {
     padding: 10px;
     text-align: right;
     color: white;
+    position: absolute;
   }
+  @media only screen and (max-width: 480px){
+    #factbtn{
+      margin-left: 0px;
+    }
+  }
+  @media only screen and (max-width: 480px){
+  .navbar-toggler {
+padding-right: 0px;
+    padding-left: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    width: 75px;
+    /* justify-content: end; */
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 480px){
+  .btn-secondary { margin-left: 90px; }
+}
+
+@media only screen and (max-width: 480px){
+  #herobutton{
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 480px){
+  .embed-responsive{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 480px){
+  #acttext{
+    padding-top: 60px;
+    font-size: 2em;
+    width: 300px;
+    padding-left: 0px;
+    padding-bottom: 60px;
+  }
+}
+@media only screen and (max-width: 480px){
+  #subbtn{
+    margin-top: 30px;
+    margin-left: 50px;
+
+  }
+}
+@media only screen and (max-width: 480px){
+  #patbtn{
+    margin-left: 70px;
+  }
+}
+.fa{
+  font-size: 40px;
+  float: left;
+  vertical-align: middle;
+  color:white;
+}
+.fa-facebook-official{
+  margin: 0px 0px 0px 35px;
+  color:white;
+}
+.fa-twitter{
+  margin: 0px 35px 0px 35px;
+}
+@media only screen and (max-width: 480px){
+  footer{ text-align: center;}
+}
+@media only screen and (max-width: 480px){
+  .fa{
+    float:none;
+  }
+}
+@media only screen and (max-width: 480px){
+  .fa-facebook-official{
+    margin:0px;
+  }
+}
+#percentage{
+  font-family: Anton;
+  font-size: 42px;
+  color:#233E94;
+}
+#percentage-1{
+  font-family: Anton;
+  font-size: 42px;
+  color:#233E94;
+}
+#editbtn{
+  color:white;
+  height: 50px;
+  width: 160px;
+  background-color: lightgrey;
+  border-radius: 0;
+}
+#editbtn:hover{
+  background-color: grey;
+}
+#submitbtn{
+  color:white;
+  height: 50px;
+  width: 160px;
+  background-color: #d49001;
+  border-radius: 0;
+}
+#submitbtn:hover{
+  background-color: #b27a01;
+}
+/* Partner Page */
+/* Clara Import the Google Font 'Lato' */
+
+
+/* Container styles */
+
+#percInfo{
+  font-size: 15px;
+
+}
+.container {
+  padding: 155px 0;
+  text-align: center;
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  color: #D7D7D7;
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+    width: 341px;
+  height: 341px;
+  
+}
+#circle-fact1 {
+  position: relative;
+  display: inline-block;
+  color: #D7D7D7;
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+    width: 341px;
+  height: 341px;
+  
+}
+#info1{
+ 
+width:500px;
+height: 500px;
+position: relative;
+margin: auto;
+ margin-top: 100px;
+}
+#info1.pessoa{
+ width: 10%;
+ }
+#info1.pessoa img{
+ width: 100%;
+ }
+
+
+/*START - GRAFICO COLUNA*/
+.column-graph{
+  width: 100%;
+  max-width: 940px;
+  margin: auto;
+  position: relative;
+  padding-top: 30px;
+
+}
+.column-graph .esq{
+  border:none;
+  position: absolute;
+  left: 40px;
+  border-left: 2px solid black;
+  height: calc(100% + 50px);
+  width: 2px;
+  top: 0;
+}
+
+.column-graph .bot{
+  border:none;
+  position: absolute;
+  left: 0px;
+  bottom: -30px;
+  border-bottom: 2px solid black;
+  height: 2px;
+  width: calc(100%);
+  
+}
+
+.column{
+  height: 50px;
+  margin-left: 42px;
+  margin-top:10px ;
+  position: relative;
+  margin-bottom:10px ;
+  font-family: arial;
+  
+
+}
+
+
+
+.gringo{
+
+  background-color: #256F8D;
+}
+
+.nac{
+
+  background-color: #F08418;
+}
+
+
+/*CHILE*/
+
+#chile{
+
+  width: 1%;
+  -webkit-animation: chile 2s;
+  animation: chile 2s;
+  animation-fill-mode: forwards;      
+}
+
+#chile:after{
+  content: ' 10 ';
+  position: absolute;
+  right: -24px;
+  color: black;
+  top: 10px;
+     opacity: 0;
+    -webkit-animation: see 2s;
+    animation: see 2s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;  
+}
+
+#chile:before{
+  content: 'Chile';
+  position: absolute;
+  left: -45px;
+  color: black;
+  top: 12px;
+     opacity: 0;
+    -webkit-animation: see 2s;
+    animation: see 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;  
+}
+
+/*URUGUAI*/
+#uruguai{
+
+  width: 5%;
+  -webkit-animation: uruguai 2s;
+  animation: uruguai 2s;
+  animation-fill-mode: forwards;  
+}
+
+#uruguai:after{
+  content: ' 44 ';
+  position: absolute;
+  right: -24px;
+  color: black;
+  top: 10px;
+       opacity: 0;
+    -webkit-animation: see 2s;
+    animation: see 2s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;  
+}
+
+#uruguai:before{
+  content: 'Uruguai';
+  position: absolute;
+  left: -65px;
+  color:black;
+  top: 12px;
+  opacity: 0;
+  -webkit-animation: see 2s;
+  animation: see 2s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;  
+}
+
+/*ARGENTINA*/
+#argentina{
+
+  width: 8%;
+  -webkit-animation: argentina 2s;
+  animation: argentina 2s;
+  animation-fill-mode: forwards;  
+
+}
+
+#argentina:after{
+  content: ' 110 ';
+  position: absolute;
+  right:-30px;
+  color: black;
+  top: 10px;
+       opacity: 0;
+    -webkit-animation: see 2s;
+    animation: see 2s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;  
+}
+
+#argentina:before{
+  content: 'Argentina';
+  position: absolute;
+  left: -80px;
+  float: left;
+  color:black;
+  top: 12px;
+       opacity: 0;
+    -webkit-animation: see 2s;
+    animation: see 2s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;  
+}
+
+/*EUA*/
+#eua{
+
+  width: 50%;
+    -webkit-animation: eua 2s;
+  animation: eua 2s;
+  animation-fill-mode: forwards;  
+}
+
+#eua:before{
+  content: 'EUA';
+  position: absolute;
+  left: -46px; 
+  float: left;
+  color: black;
+  top: 12px;
+  opacity: 0;
+  -webkit-animation: see 2s;
+  animation: see 2s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;  
+}
+
+
+/*BRASIL*/
+.nac{
+
+    width: 85%;
+      -webkit-animation: br 2s;
+  animation: br 2s;
+  animation-fill-mode: forwards;  
+}
+
+.nac:after{
+  content: ' 2077 ';
+  position: absolute;
+  right: 10px;
+  color: #000;
+  top: 10px;
+  opacity: 0;
+  -webkit-animation: see 2s;
+  animation: see 2s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;  
+}
+
+.nac:before{
+  content: 'Brasil';
+  position: absolute;
+  left: -51px;
+  float: left;
+  color:black;
+  top: 12px;
+  opacity: 0;
+  -webkit-animation: see 2s;
+  animation: see 2s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;  
+}
+
+/*CANADA*/
+#canada{
+
+  width: 95%;
+  -webkit-animation: canada 2s;
+  animation: canada 2s;
+  animation-fill-mode: forwards;  
+}
+
+#canada:after{
+  content: ' 2374 ';
+  position: absolute;
+  right: 10px;
+  color:black;
+  top: 10px;
+       opacity: 0;
+    -webkit-animation: see 2s;
+    animation: see 2s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;  
+}
+
+#canada:before{
+  content: 'Canada';
+  position: absolute;
+  left: -67px;
+  float: left;
+  color: black;
+  top: 12px;
+  opacity: 0;
+  -webkit-animation: see 2s;
+  animation: see 2s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;  
+}
+
+
+
+
+
+/*END - GRAFICO COLUNA*/
+
+.chart img {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+  background: white;
+}
+/* END Container styles */
+
+/* Colors for the circles and positions for the graphics */
+.html {
+  top: 50px;
+  left: 45px;
+}
+
+ svg .inner {
+  stroke: #D7D7D7;
+  fill: none;
+    stroke-width: 40;
+}
+
+ svg .inner-1 {
+  
+  fill: none;
+    
+}
+
+.html + svg .outer {
+  stroke: #D7D7D7;
+}
+
+.html + svg .outer-1 {
+  stroke: #D7D7D7;
+}
+
+.css + svg .outer {
+  stroke: #D7D7D7;
+}
+
+.css + svg .outer-1 {
+  stroke: #D7D7D7;
+}
+
+.javascript {
+  max-width: 90px;
+  max-height: 90px;
+  top: 45px;
+  left: 45px;
+}
+
+.javascript + svg .outer {
+  stroke: #D7D7D7;
+}
+
+.javascript + svg .outer-1 {
+  stroke: #D7D7D7;
+}
+.node {
+
+  top: 45px;
+  left: 45px;
+}
+
+.node + svg .outer {
+  stroke: #D7D7D7;
+}
+
+.node + svg .outer-1 {
+  stroke: #D7D7D7;
+}
+
+.chart svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  z-index: 2;
+
+}
+
+
+/*#circle:after {
+  content: 'Brasil';
+  position: absolute;
+   
+  opacity: 0;
+
+    border-right: 3px solid #F08418;
+    bottom: 25px;
+    left: -40px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    font-size: 20px;
+    color: black;
+    border-bottom: 3px solid #F08418;
+
+    -webkit-animation: see 2s;
+    animation: see 2s; 
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;  */
+
+}
+#pizza:after {
+    content: '5%';
+    position: absolute;
+    opacity: 0;
+    /* border-right: 3px solid #F08418; */
+    /* bottom: 25px; */
+    top: -113px;
+    /* left: -32px; */
+    right: 52px;
+    padding: 10px;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 50px;
+    font-size: 49px;
+    color: black;
+    border-bottom: 3px solid #F08418;
+    -webkit-animation: see 2s;
+    animation: see 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+#pizza:before {
+    content: ' ';
+    position: absolute;
+    opacity: 0;
+    top: -5px;
+    right: 157px;
+    /* width: 1px; */
+    height: 26px;
+    border-right: 3px solid #F08418;
+    -webkit-animation: see 2s;
+    animation: see 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+
+.chart figcaption {
+  width: calc(80% - 10px);
+  height: calc(80% - 10px);
+  border-radius: 100%;
+  position: absolute;
+  z-index: 1;
+  left: calc( 50% - (80%/2) - -7px );
+  top: calc( 50% - (80%/2) - 13px);
+  -webkit-animation: see 1s;
+  animation: see 1s;
+}
+.chart figcaption h2{
+  font-family: arial;
+  font-weight: lighter;
+  font-size: 80px;
+  color: black;
+  margin-bottom: 10px;
+}
+#pizza{
+  top: 50px;
+
+}
+
+#pizza figcaption h2{
+  font-family: arial;
+  font-weight: lighter;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 10px;
+  font-size: 50px;
+  text-align: left;
+  margin-top: 100px;
+  padding-left: 50px;
+}
+
+.chart figcaption p{
+
+  color: black;
+  max-width: 40%;
+  margin: auto;
+  font-size: 20px;
+}
+
+.outer {
+  fill: transparent;
+  stroke: #442a5b;
+  stroke-width: 26;
+  stroke-dasharray: 251%;
+  -webkit-animation-play-state: running;
+    /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+.outer-1 {
+  fill: transparent;
+  stroke: #442a5b;
+  stroke-width: 10;
+  stroke-dasharray: 251%;
+  -webkit-animation-play-state: running;
+    /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+}
+.pizza{
+  stroke-dashoffset: -270%;
+  stroke-width: 80%;
+}
+
+/* END Circle colors and graphic positions */
+
+
+/* Set the initial values for the animation */
+
+.chart[data-percent='90'] .outer {
+   stroke-dashoffset: 15%;
+  -webkit-animation: show90 2s;
+  animation: show90 2s;
+}
+
+#circle-fact1[data-percent='90'] .outer {
+   stroke-dashoffset: 15%;
+  -webkit-animation: show90 2s;
+  animation: show90 2s;
+}
+.chart[data-percent='pizza'] .outer {
+  stroke-dashoffset: -262%;
+  -webkit-animation: pizza 1s;
+  animation: pizza 1s;
+}
+.chart[data-percent='90'] .outer-1 {
+   stroke-dashoffset: 5%;
+  -webkit-animation: show90 3s;
+  animation: show90 2s;
+}
+
+#circle-fact1[data-percent='90'] .outer-1 {
+   stroke-dashoffset: 5%;
+  -webkit-animation: show90 3s;
+  animation: show90 2s;
+}
+
+/* END set initial animation values */
+
+/* Keyframes for the initial animation */
+
+@-webkit-keyframes show90 {
+  from {
+    stroke-dashoffset: 251%;
+  }
+  
+  to {
+    stroke-dashoffset: 15%;
+  }
+}
+
+@keyframes show90 {
+  from {
+        stroke-dashoffset: 251%;
+  }
+  
+  to { 
+    stroke-dashoffset: 15%;
+  }
+}
+
+
+@-webkit-keyframes canada {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 95%;
+  }
+}
+
+@keyframes canada {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 95%;
+  }
+}
+
+@-webkit-keyframes eua {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes eua {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes br {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes br {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 85%;
+  }
+}
+
+
+@-webkit-keyframes argentina {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 8%;
+  }
+}
+
+@keyframes argentina {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 8%;
+  }
+}
+
+@-webkit-keyframes chile {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 1%;
+  }
+}
+
+@keyframes chile {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 1%;
+  }
+}
+@-webkit-keyframes uruguai {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 5%;
+  }
+}
+
+@keyframes uruguai {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 5%;
+  }
+}
+
+
+
+@-webkit-keyframes pizza {
+  from {
+        stroke-dashoffset: -251%;
+  }
+  
+  to {
+    stroke-dashoffset: -262%;  }
+}
+
+@keyframes pizza {
+  from {
+        stroke-dashoffset: -251%;
+  }
+  
+  to {
+    stroke-dashoffset: -262%;  }
+}
+
+@keyframes see {
+  from {
+      opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+
+.feature-text{
+ color: grey;
+ text-align: center;
+ margin-top: 50px;
+ font-size: 32px;
+ /* background-color:#027681; */
+ }
+ header {
+    position: relative;
+    height: 380px;
+    background-color: #027681;
+ }
+ #global-info{
+  font-weight: 700;
+ }
+#circle-fact1{
+  margin-bottom: 0px;
+  bottom: 50px;
+  float: left;
+  top: 50px;
+  left: 375px;
+}
+
+@media only screen 
+and (max-width: 480px){
+  #circle-fact1{
+    left:10px;
+  }
+}
+#green-shape{
+  margin-top:350px
+}
+@media only screen and (max-width: 480px){
+  #green-shape{
+    margin-top: 700px;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  #county-facts{
+    margin-top: 60px;
+  }
+}
+@media only screen and (max-width: 480px){
+  #moreInfo{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+#fact-hero-text{
+  width: 872px;
+}
+@media only screen and (max-width: 480px){
+  #fact-hero-text{
+    width: 350px;
+  }
+  @media only screen and (max-width: 480px){
+    #fact-download{
+      margin-left: 0px;
+    }
+  }
+}
